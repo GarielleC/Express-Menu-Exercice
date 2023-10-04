@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/assets/css/index.css">
+    <title>Commentaires clients</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <nav>
+                <a href='/'>Accueil</a>
+                <a href="/menu">Menus</a> 
+                <a href="/about">À propos</a>
+                <a href='/comment/add'>Votre commentaire</a>
+            </nav>
+        </div>
+    </div>
+    <article>
+        <h1>Commentaires clients</h1>
+            <!-- Création d'une liste non ordonnée pour afficher les commentaires -->
+            <ul>
+                <!-- Utilisation d'une boucle forEach pour parcourir chaque commentaire dans la variable 'commentaires' -->
+                <% commentaires.forEach((comment) => { %>
+                    <!-- Création d'un élément de liste pour chaque commentaire -->
+                    <li>
+                        <!-- Affichage du prénom et de la note associés à chaque commentaire -->
+                        <%= comment.prenom %> <%= comment.nom %> : <%= comment.note %>/10
+                    </li>
+                    <!-- Affichage du message associé à chaque commentaire -->
+                    <p>Commentaire de cette personne : 
+                    <%= comment.message %></p>
+                <!-- Fermeture de la boucle forEach -->
+                <% }); %>
+            </ul>  
+    </article>
+</body>
+</html>

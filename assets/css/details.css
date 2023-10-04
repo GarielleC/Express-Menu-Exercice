@@ -1,0 +1,72 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Occupe toute la largeur de la page */
+    background-color: #890000; /* Couleur de fond */
+    padding: 20px; /* Espace intérieur du menu */
+    text-align: center; /* Centre le contenu du menu horizontalement */
+    z-index: 1; /* Assure que le menu est en premier plan */
+  }
+  
+  /* Styles pour les éléments du menu */
+  .menu a {
+    color: #fff; /* Couleur du texte */
+    text-decoration: none; /* Supprime les soulignements des liens */
+    display: inline-block; /* Affiche les éléments côte à côte */
+    margin-right: 20px; /* Espacement entre les éléments du menu */
+    padding: 10px 20px; /* Espacement à l'intérieur des éléments du menu */
+    border: 1px solid #fff; /* Bordure avec couleur de base */
+    transition: background-color 0.3s; /* Animation de changement de couleur au survol */
+  }
+  
+  /* Style au survol de l'élément du menu */
+  .menu a:hover {
+    background-color: #a58989; /* Couleur de fond au survol */
+    text-decoration: underline;
+  }
+
+  article{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #d5d5d5;
+    max-width: 400px; /* Largeur maximale du cadre */
+    margin: 0 auto; /* Centre le cadre horizontalement */
+    padding: 20px ; /* Espace à l'intérieur du cadre */
+    border: 1px solid #d5d5d5; /* Bordure du cadre */
+    border-radius: 10px; /* Coins arrondis du cadre */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.469); /* Ombre autour du formulaire */
+    position: relative; /* Permet d'utiliser la position absolue pour placer l'article */
+    top: 50px; /* Ajustez la valeur en fonction de la hauteur de votre menu */
+  }
+
+  body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 30px;
+    margin-top: 100px; 
+    background-color: rgb(255, 248, 240);
+    text-align: left; /* Alignement du texte à gauche */
+  }
+
+  img{
+    border-radius: 100px; /* Coins arrondis du cadre */
+  max-width: 50%; /* Réduire l'image à 50% de sa largeur originale (ajustez la valeur selon vos besoins) */
+  display: block; /* Pour centrer l'image avec des marges automatiques */
+  margin: auto; /* Centrer l'image horizontalement */
+  }
+
+  h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  h2{
+    margin-top: 30px; 
+    margin-bottom: 30px;
+    color: rgb(106, 16, 16);
+    width: 10px;
+    height: 10px;
+    text-align: left;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/css/menu.css">
+        <title>Plats</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="menu">
+                <nav>   
+                    <a href="/">Accueil</a>
+                    <a href="/about">À propos</a>
+                    <a href='/comment'>Commentaires clients</a> 
+                    <a href='/comment/add'>Votre commentaire</a>
+                </nav>
+            </div>
+        </div>
+        <article>
+            <h1>Nos Plats :</h1>
+            <ul class="platslist">
+                <% plats.forEach((plat) => { %>
+                    <li class="platel">
+                        <a href="/menu/<%= plat.id %>">
+                            <p><%= plat.nom %> : ..... <%= plat.prix %>€</p>
+                            <p>(<%= plat.breveDescription %>)</p>
+                        </a>
+                    </li>
+                <% }); %>
+            </ul>
+        </article>
+    </body>
+</html>

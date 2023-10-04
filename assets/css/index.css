@@ -1,0 +1,100 @@
+/* Styles de base pour le menu */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Occupe toute la largeur de la page */
+    background-color: #890000; /* Couleur de fond */
+    padding: 20px; /* Espace intérieur du menu */
+    text-align: center; /* Centre le contenu du menu horizontalement */
+    z-index: 1; /* Assure que le menu est en premier plan */
+  }
+  
+  /* Styles pour les éléments du menu */
+  .menu a {
+    color: #fff; /* Couleur du texte */
+    text-decoration: none; /* Supprime les soulignements des liens */
+    display: inline-block; /* Affiche les éléments côte à côte */
+    margin-right: 20px; /* Espacement entre les éléments du menu */
+    padding: 10px 20px; /* Espacement à l'intérieur des éléments du menu */
+    border: 1px solid #fff; /* Bordure avec couleur de base */
+    transition: background-color 0.3s; /* Animation de changement de couleur au survol */
+  }
+  
+  /* Style au survol de l'élément du menu */
+  .menu a:hover {
+    background-color: #a58989; /* Couleur de fond au survol */
+    text-decoration: underline;
+  }
+
+  body{
+    background-color: rgb(255, 248, 240);;
+    margin-top: 100px; /* Crée de l'espace entre le menu et l'article */
+    margin: 0px 5px 0px 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    color: black;
+  }
+
+h1{
+    margin-top: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+  ul {
+    /* Rend la balise ul transparente */
+    list-style: none;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 100px; /* Crée de l'espace entre le menu et l'article */
+  }
+
+head,
+body{
+  /* Media query pour les écrans de largeur moyenne (par exemple, tablettes) */
+@media screen and (max-width: 768px) {
+    p {
+      font-size: 16px; /* Ajustement de la taille de la police pour les écrans moyens */
+    }
+    
+    .container{
+        width: auto; /* Ajustement la largeur pour les écrans moyens */
+        font-size: 20px; /* Ajustement de la taille de la police pour les écrans moyens */
+    }
+    h1{
+      width: auto; /* Ajustement la largeur pour les écrans moyens */
+      font-size: 20px; /* Ajustement de la taille de la police pour les écrans moyens */
+    }
+  
+    ul {
+      font-size: 16px; /* Ajustement de la taille de la police pour les écrans moyens */
+    }
+  }
+  
+  /* Media query pour les écrans étroits (par exemple, smartphones) */
+  @media screen and (max-width: 480px) {
+    p {
+      font-size: 14px; /* Réducton de  la taille de la police pour les écrans étroits */
+    }
+    
+    .container{
+        width: 480px; /* Ajustement de la largeur pour les écrans étroits */
+      font-size: 18px; /* Réducton de  la taille de la police pour les écrans étroits */
+    }
+
+    h1{
+      width: 480px; /* Ajustement de la largeur pour les écrans étroits */
+      font-size: 18px; /* Réducton de  la taille de la police pour les écrans étroits */
+    }
+  
+    ul {
+      font-size: 14px; /* Réducton de la taille de la police pour les écrans étroits */
+    }
+  }
+}

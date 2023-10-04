@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/assets/css/Comment.css">
+    <title>Commentaires</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <nav>
+                <a href="/">Accueil</a>
+                <a href="/menu">Menus</a>
+                <a href="/about">À propos</a>
+                <a href="/comment">Commentaires clients</a>  
+            </nav>
+        </div>
+    </div>
+    <form method="post">
+        <div>
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" required>
+        </div>
+        <div>
+            <label for="prenom">Prénom</label>
+            <input type="text" name="prenom" id="prenom" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="note">La note</label>
+            <input type="number" name="note" id="note" min="0" max="10" required>
+        </div>
+        <div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" minlength="10" maxlength="300" required></textarea>
+        </div>
+        <div>
+            <button type="submit">Envoyer</button>
+        </div>
+    </form>
+</body>
+</html>

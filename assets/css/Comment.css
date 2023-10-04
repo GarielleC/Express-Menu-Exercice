@@ -1,0 +1,131 @@
+/* Styles de base pour le conteneur */
+.container {
+    display: flex;
+    flex-direction: column; /* Affiche les éléments en colonne */
+    align-items: center; /* Centre le contenu horizontalement */
+    background-color: #890000; /* Couleur de fond */
+    padding: 20px; /* Espace intérieur du conteneur */
+  }
+  /* Styles de base pour le menu */
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Occupe toute la largeur de la page */
+    background-color: #890000; /* Couleur de fond */
+    padding: 20px; /* Espace intérieur du menu */
+    text-align: center; /* Centre le contenu du menu horizontalement */
+    z-index: 1; /* Assure que le menu est en premier plan */
+  }
+  
+  /* Styles pour les éléments du menu */
+  .menu a {
+    color: #fff; /* Couleur du texte */
+    text-decoration: none; /* Supprime les soulignements des liens */
+    display: inline-block; /* Affiche les éléments côte à côte */
+    margin-right: 20px; /* Espacement entre les éléments du menu */
+    padding: 10px 20px; /* Espacement à l'intérieur des éléments du menu */
+    border: 1px solid #fff; /* Bordure avec couleur de base */
+    transition: background-color 0.3s; /* Animation de changement de couleur au survol */
+  }
+  
+  /* Style au survol de l'élément du menu */
+  .menu a:hover {
+    background-color: #a58989; /* Couleur de fond au survol */
+    text-decoration: underline;
+  }
+  
+  /* Styles pour le formulaire */
+form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #890000;
+    max-width: 400px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centre le formulaire horizontalement */
+    padding: 20px ; /* Espace à l'intérieur du formulaire */
+    border: 1px solid #890000; /* Bordure du formulaire */
+    border-radius: 10px; /* Coins arrondis du formulaire */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.469); /* Ombre autour du formulaire */
+    position: relative; /* Permet d'utiliser la position absolue pour placer l'article */
+    top: 50px; /* Ajustez la valeur en fonction de la hauteur de votre menu */
+}
+
+/* Styles pour les éléments du formulaire (labels et champs de saisie) */
+div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #890000;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Espace entre les champs de saisie */
+    text-align: left ;
+    background-color: #ffe4e4;
+}
+
+textarea {
+    background-color: #ffe4e4;
+    border: 1px solid #890000;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #890000;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Espace entre les champs de saisie */
+}
+
+body {
+  background-color: rgb(255, 248, 240);
+}
+
+button {
+    background-color: #1f1717;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+
+
+/* Media query pour les écrans de largeur moyenne (par exemple, tablettes) */
+@media screen and (max-width: 768px) {
+    p {
+      font-size: 16px; /* Ajustement de la taille de la police pour les écrans moyens */
+    }
+  
+    h1,
+    h3 {
+      width: auto; /* Ajustement la largeur pour les écrans moyens */
+      font-size: 20px; /* Ajustement de la taille de la police pour les écrans moyens */
+    }
+  
+  }
+  
+  /* Media query pour les écrans étroits (par exemple, smartphones) */
+  @media screen and (max-width: 480px) {
+    p {
+      font-size: 14px; /* Réducton de  la taille de la police pour les écrans étroits */
+    }
+  
+    h1,
+    h3 {
+      width: 480px; /* Ajustement de la largeur pour les écrans étroits */
+      font-size: 18px; /* Réducton de  la taille de la police pour les écrans étroits */
+    }
+  
+  }
+
+
