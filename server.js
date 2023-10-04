@@ -80,6 +80,23 @@ const server = http.createServer((request, response) => {
     }
 });
 
+//Routage
+const routerBase = require("./routers/base.router")
+app.use("", routerBase)
+
+
+//Gestion des 404
+app.all("*", (req, res) => {
+    res.status(404).send("Not Found")
+})
+
+//Autre error global
+app.use((error, req, res, next) => {
+    console.log("Error URL : ", req.url)
+    console.log("Error Message : ", error.message)
+    res.status(500)
+    res.send("Internal Server Error")
+})
 // Démarre le serveur sur le port spécifié dans les variables d'environnement 
 const port = 3301
 app.listen(port,console.log(`Serveur en écoute sur http://localhost:${port}`));
