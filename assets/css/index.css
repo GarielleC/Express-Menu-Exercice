@@ -2,11 +2,13 @@
 @import url("normalize.css");
 
 html, body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 0;
   margin :0;
 }
 
 nav {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #b71c1c; 
   color: white; 
   text-align: center; 
@@ -22,10 +24,109 @@ nav a {
   padding: 5px 10px; 
   margin: 5px 10px; 
   cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.469); /* Ombre autour du formulaire */
+  border-radius: 10px; /* Coins arrondis du cadre */
 }
 
 /* Style du bouton une fois cliqué */
 nav a:active {
   background-color: #ffcdd2; 
   color: black; 
+}
+.container {
+  padding: 0.1rem 0.2rem;
+  margin:0.1rem 0.2rem;
+}
+
+.menu {
+  border-radius: 10px; /* Coins arrondis du cadre */
+  background-color: rgb(174, 152, 155); /* Couleur de fond rose */
+  border: 2px solid rgb(174, 152, 155); /* Contour rouge de 2 pixels */
+  color: white; /* Couleur du texte en noir */
+  padding: 0.1rem 0.2rem; /* Espacement interne pour le bouton */
+  text-align: center; /* Centrage du texte */
+  text-decoration: none; /* Supprime la soulignement du lien (si utilisé comme lien) */
+  display: inline-block; /* Pour que le bouton occupe uniquement l'espace nécessaire */
+  cursor: pointer; /* Curseur de la main au survol */
+  border-radius: 5px; /* Coins arrondis */
+  font-size: 16px; /* Taille de la police */
+  font-weight: bold; /* Gras pour le texte */
+}
+
+.menu:hover{
+  background-color: rgb(255, 131, 148);
+  border: 2px solid rgb(255, 131, 148); 
+  color : black;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 12px; /* Vous pouvez ajuster la taille de la police selon vos besoins */
+}
+
+.plats{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #d5d5d5;
+  max-width: 400px; /* Largeur maximale du cadre */
+  margin: 0 auto; /* Centre le cadre horizontalement */
+  padding: 20px ; /* Espace à l'intérieur du cadre */
+  border: 1px solid #d5d5d5; /* Bordure du cadre */
+  border-radius: 10px; /* Coins arrondis du cadre */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.469); /* Ombre autour du formulaire */
+  position: relative; /* Permet d'utiliser la position absolue pour placer l'article */
+  top: 50px; /* Ajuste la valeur en fonction de la hauteur de votre menu */
+
+  h1{
+    text-align: left;
+    font-size: 20px;
+    color: rgb(106, 16, 16);
+  }
+  ul{
+    list-style: none;
+  }
+  
+   p{
+      margin: 4px 0; /* 8px en haut et en bas, 0 sur les côtés */
+   }
+}
+
+.details{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #d5d5d5;
+    max-width: 400px; /* Largeur maximale du cadre */
+    margin: 0 auto; /* Centre le cadre horizontalement */
+    padding: 20px ; /* Espace à l'intérieur du cadre */
+    border: 1px solid #d5d5d5; /* Bordure du cadre */
+    border-radius: 10px; /* Coins arrondis du cadre */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.469); /* Ombre autour du formulaire */
+    position: relative; /* Permet d'utiliser la position absolue pour placer l'article */
+    top: 50px; /* Ajustez la valeur en fonction de la hauteur de votre menu */
+
+  h2{
+    margin-top: 30px; 
+    margin-bottom: 30px;
+    color: rgb(106, 16, 16);
+    width: 10px;
+    height: 10px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  img{
+    border-radius: 100px; /* Coins arrondis du cadre */
+  max-width: 50%; /* Réduire l'image à 50% de sa largeur originale (ajustez la valeur selon vos besoins) */
+  display: block; /* Pour centrer l'image avec des marges automatiques */
+  margin: auto; /* Centrer l'image horizontalement */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.469); /* Ombre autour du formulaire */
+  }
+
+  h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
 }

@@ -21,7 +21,7 @@ const menuController = {
             // Utilisation de la fonction intégrée res.render pour le rendu EJS
             res.render("index.ejs", {
                 page: "./Pages/menu/index",
-                menu: plats,
+                plats: plats,
             });
         } catch (err) {
             console.error("Erreur lors de la gestion de la requête GET", err); 
@@ -51,7 +51,7 @@ const menuController = {
             // Utilisation de la fonction intégrée res.render pour le rendu EJS
             res.render("index.ejs", {
                 page: "./Pages/menu/details",
-                detail: plat, 
+                plat: plat, 
             });
         } catch (err) {
             console.error("Erreur lors de la gestion de la requête GET", err); 
