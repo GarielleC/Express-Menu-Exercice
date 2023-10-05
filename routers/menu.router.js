@@ -1,9 +1,8 @@
-// const express = require('express');
-// const routerMenu = express.Router();
+const express = require('express'); 
+const router = express.Router();
+const menuController = require('../controllers/menuController');
 
-// routerMenu.post("", (req, res) => {})
-// routerMenu.post("", (req, res) => {})
+router.get('/', menuController.index);
+router.get('/details', menuController.details);
 
-
-
-// module.exports = router;
+module.exports = router;
