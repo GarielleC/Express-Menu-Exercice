@@ -4,8 +4,12 @@
         <%- include("fragments/head.ejs"); %>
     </head>
     <body>
-        <%- include("fragments/navbar.ejs"); %> 
-        <%- include(page); %> 
+        <header>
+            <%- include("fragments/navbar.ejs"); %> 
+        </header>
+        <main>
+            <%- include(page); %> 
+        </main>
         <%- include("fragments/footer.ejs"); %>
     </body>
 </html>

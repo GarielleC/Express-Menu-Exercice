@@ -5,7 +5,7 @@ const homeController = {
             // Utilisation de la fonction intégrée res.render pour le rendu EJS
             res.render("index.ejs", {
                 page: "pages/home/index",
-                accueilData: accueilData,
+                // accueilData: accueilData,
             });
         } catch (error) {
             console.error("An error occurred:", error);
