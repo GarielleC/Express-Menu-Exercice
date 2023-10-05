@@ -13,12 +13,13 @@ app.set("view engine", "ejs");
 app.set("views", "./views");
 
 app.use(express.json());
+// bodyparser lie les donner que l'ont envoie via un formulaire
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/assets", express.static("assets")); // Pour servir les fichiers statiques
 
 // Routage
 const routerBase = require("./routers/base.router");
-app.use("/", routerBase);
+app.use("", routerBase);
 
 // Gestion des erreurs 404
 app.use((req, res) => {

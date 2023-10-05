@@ -1,0 +1,13 @@
+<article>
+    <h1>Nos Plats :</h1>
+    <ul class="platslist">
+        <% plats.forEach((plat) => { %>
+            <li class="platel">
+                <a href="/menu/<%= plat.id %>">
+                    <p><%= plat.nom %> : ..... <%= plat.prix %>€</p>
+                    <p>(<%= plat.breveDescription %>)</p>
+                </a>
+            </li>
+        <% }); %>
+    </ul>
+</article>

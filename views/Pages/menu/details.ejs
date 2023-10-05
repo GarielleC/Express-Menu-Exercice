@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="menu">
+        <a href='/menu'>Menus</a>
+    </div>
+</div>
+<article>
+    <h1><%= plat.Nom %></h1>
+    <img class="img" src="/assets/Images/<%= plat.Image %>" alt="<%= plat.BreveDescription %>"/>
+    <h2>Description:</h2>
+    <p><%= plat.Description %></p>
+    <h2>Prix:</h2>
+    <p><%= plat.Prix %>€</p>
+    <p><%= plat.Allergenes %></p>
+</article>
