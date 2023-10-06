@@ -5,6 +5,7 @@ html, body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 0;
   margin :0;
+ background-color : rgb(255, 248, 240)
 }
 
 /* Css pour la navigateur */
@@ -239,7 +240,53 @@ nav a:active {
 
 /* css pour les commentaires clients */
 .comment{
+    margin-top: 10px; /* Crée de l'espace entre le menu et l'article */
+    margin: 5px 5px 5px 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    color: black;
+    padding: 4rem;
+  box-sizing: border-box;
 
+  h1{
+      margin-top: 100px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+  }
+  .carre{
+      display: flex; /* Utilisation de flexbox pour centrer le contenu */
+      justify-content: center; /* Centre horizontalement */
+      align-items: center; /* Centre verticalement */
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: #b71c1c;
+      max-width: 400px; /* Largeur maximale du formulaire */
+      max-height: 600px; /* Hauteur maximale de l'élément .carre */
+      margin: 0 auto; /* Centre le formulaire horizontalement */
+      padding: 20px ; /* Espace à l'intérieur du formulaire */
+      border-radius: 10px; /* Coins arrondis du formulaire */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.469); /* Ombre autour du formulaire */
+      position: relative; /* Permet d'utiliser la position absolue pour placer l'article */
+      top: 0.1rem; /* Ajustement de la valeur en fonction de la hauteur de votre menu */
+  }
+
+  ul {
+    
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.469); /* Ombre autour du formulaire */
+    background-color: white;
+    /* Rend la balise ul transparente */
+    list-style: none;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 100px; /* Crée de l'espace entre le menu et l'article */
+  }
 }
 
 /* css pour enregistrement de son commentaire */

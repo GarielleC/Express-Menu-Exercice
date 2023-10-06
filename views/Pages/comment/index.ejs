@@ -1,18 +1,20 @@
 <article class="comment">
     <h1>Commentaires clients</h1>
         <!-- Création d'une liste non ordonnée pour afficher les commentaires -->
-        <ul>
-            <!-- Utilisation d'une boucle forEach pour parcourir chaque commentaire dans la variable 'commentaires' -->
-            <% commentaires.forEach((comment) => { %>
-                <!-- Création d'un élément de liste pour chaque commentaire -->
-                <li>
-                    <!-- Affichage du prénom et de la note associés à chaque commentaire -->
-                    <%= comment.prenom %> <%= comment.nom %> : <%= comment.note %>/10
+        <div class="carre">
+            <ul>
+                <!-- Utilisation d'une boucle forEach pour parcourir chaque commentaire dans la variable 'commentaires' -->
+                <% commentaires.forEach((comment) => { %>
+                    <!-- Création d'un élément de liste pour chaque commentaire -->
+                    <li>
+                        <!-- Affichage du prénom et de la note associés à chaque commentaire -->
+                        <%= comment.prenom %> <%= comment.nom %> : <%= comment.note %>/10
+                    <!-- Affichage du message associé à chaque commentaire -->
+                    <p>Commentaire de cette personne : 
+                    <%= comment.message %></p>
                 </li>
-                <!-- Affichage du message associé à chaque commentaire -->
-                <p>Commentaire de cette personne : 
-                <%= comment.message %></p>
-            <!-- Fermeture de la boucle forEach -->
-            <% }); %>
-        </ul>  
+                <!-- Fermeture de la boucle forEach -->
+                <% }); %>
+            </ul>  
+        </div>
 </article>
