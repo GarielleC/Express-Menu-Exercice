@@ -190,3 +190,116 @@ nav a:active {
     font-weight: bold;
   }
 }
+
+/* css home */
+.home{
+  position: relative; /* Permet d'utiliser la position absolue pour placer l'article */
+  top: 100px; /* Ajuste la valeur en fonction de la hauteur de votre menu */
+  padding: 5px; /* Espace intérieur de l'article */
+  text-align: center; /* Centre le contenu de l'article horizontalement */
+
+  p {
+  
+    margin: 0px 10px 0px 10px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    color: black;
+  }
+  
+  h1 {
+    color: brown;
+    width: 500px;
+    height: 30px;
+    margin: 0px 5px 0px 5px;
+    padding: 10px 5px 10px 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  h3 {
+    color: rgb(106, 16, 16);
+    width: 500px;
+    height: 50px;
+    margin: 0px 5px 0px 5px;
+    padding: 10px 5px 10px 5px;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: left;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }  
+}
+
+/* css pour les commentaires clients */
+.comment{
+
+}
+
+/* css pour enregistrement de son commentaire */
+.formulaire{
+  padding: 4rem;
+  box-sizing: border-box;
+    /* Styles pour le formulaire */
+  form {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: #b71c1c;
+      max-width: 400px; /* Largeur maximale du formulaire */
+      margin: 0 auto; /* Centre le formulaire horizontalement */
+      padding: 20px ; /* Espace à l'intérieur du formulaire */
+      border: 1px solid #b71c1c; /* Bordure du formulaire */
+      border-radius: 10px; /* Coins arrondis du formulaire */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.469); /* Ombre autour du formulaire */
+      position: relative; /* Permet d'utiliser la position absolue pour placer l'article */
+      top: 0.1rem; /* Ajustez la valeur en fonction de la hauteur de votre menu */
+  }
+
+  /* Styles pour les éléments du formulaire (labels et champs de saisie) */
+  div {
+      margin-bottom: 10px;
+  }
+
+  label {
+      display: block;
+      color: white;
+  }
+
+  input {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #b71c1c;
+      border-radius: 5px;
+      margin-bottom: 10px; /* Espace entre les champs de saisie */
+      text-align: left ;
+      background-color: white;
+  }
+
+  textarea {
+      background-color: white;
+      border: 1px solid #b71c1c;
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #b71c1c;
+      border-radius: 5px;
+      margin-bottom: 10px; /* Espace entre les champs de saisie */
+  }
+  button {
+      background-color: #1f1717;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  button:hover {
+      background-color: #fff;
+      color: black;
+  }
+}
