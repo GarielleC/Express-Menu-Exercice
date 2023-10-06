@@ -7,6 +7,7 @@ html, body {
   margin :0;
 }
 
+/* Css pour la navigateur */
 nav {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #b71c1c; 
@@ -38,6 +39,62 @@ nav a:active {
   margin:0.1rem 0.2rem;
 }
 
+/* Css pour a propos */
+.about{
+  p {
+    margin-top: 100px; 
+    margin: 0px 10px 0px 10px;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    color: black;
+  }
+  
+  h1 {
+    margin-top: 30px; 
+    margin-bottom: 30px;
+    color: brown;
+    width: 500px;
+    height: 30px;
+    margin: 0px 10px 0px 10px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  h3 {
+    margin-top: 30px; 
+    margin-bottom: 30px;
+    color: rgb(106, 16, 16);
+    width: 500px;
+    height: 50px;
+    margin: 0px 10px 0px 10px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: left;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  ul {
+    margin: 0px 10px 0px 10px;
+    padding: 10px 20px 10px 20px;
+    margin-top: 30px; 
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
+
+/* css pour le menu des plats*/
 .menu {
   border-radius: 10px; /* Coins arrondis du cadre */
   background-color: rgb(174, 152, 155); /* Couleur de fond rose */
@@ -59,11 +116,12 @@ nav a:active {
   color : black;
 }
 
+/* css pour le copyright */
 .footer {
   position: absolute;
   bottom: 0;
   right: 0;
-  font-size: 12px; /* Vous pouvez ajuster la taille de la police selon vos besoins */
+  font-size: 12px;
 }
 
 .plats{
@@ -92,6 +150,8 @@ nav a:active {
    }
 }
 
+
+/* Css pour les détails d'un plat */
 .details{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #d5d5d5;
@@ -102,7 +162,7 @@ nav a:active {
     border-radius: 10px; /* Coins arrondis du cadre */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.469); /* Ombre autour du formulaire */
     position: relative; /* Permet d'utiliser la position absolue pour placer l'article */
-    top: 50px; /* Ajustez la valeur en fonction de la hauteur de votre menu */
+    top: 50px; /* Ajuste la valeur en fonction de la hauteur de votre menu */
 
   h2{
     margin-top: 30px; 
