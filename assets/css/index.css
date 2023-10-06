@@ -120,7 +120,7 @@ nav a:active {
 /* css pour le copyright */
 .footer {
   position: absolute;
-  bottom: 0;
+  bottom: left;
   right: 0;
   font-size: 12px;
 }
