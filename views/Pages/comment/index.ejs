@@ -1,5 +1,5 @@
 <article class="comment">
-    <h1>Commentaires clients</h1>
+    <h1>Commentaires clients </h1>
         <!-- Création d'une liste non ordonnée pour afficher les commentaires -->
         <div class="carre">
             <ul>
@@ -10,8 +10,8 @@
                         <!-- Affichage du prénom et de la note associés à chaque commentaire -->
                         <%= comment.prenom %> <%= comment.nom %> : <%= comment.note %>/10
                     <!-- Affichage du message associé à chaque commentaire -->
-                    <p>Commentaire de cette personne : 
-                    <%= comment.message %></p>
+                    <p>Commentaire de cette personne : </p>
+                    <p><%= comment.message %></p>
                 </li>
                 <!-- Fermeture de la boucle forEach -->
                 <% }); %>
