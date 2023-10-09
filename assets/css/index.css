@@ -110,8 +110,8 @@ nav a:active {
 }
 
 .menu:hover{
-  background-color: rgb(0, 0, 0);
-  border: 2px solid rgb(0, 0, 0); 
+  background-color: #b71c1c;
+  border: 2px solid #b71c1c; 
   color : white;
 }
 
@@ -127,11 +127,11 @@ nav a:active {
 
 .plats{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #d5d5d5;
+  background-color: rgb(174, 152, 155);
   max-width: 400px; /* Largeur maximale du cadre */
   margin: 1rem auto; /* Centre le cadre horizontalement */
   padding: 20px ; /* Espace à l'intérieur du cadre */
-  border: 1px solid #d5d5d5; /* Bordure du cadre */
+  border: 1px solid rgb(174, 152, 155); /* Bordure du cadre */
   border-radius: 10px; /* Coins arrondis du cadre */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.469); /* Ombre autour du formulaire */
   top: 50px; /* Ajuste la valeur en fonction de la hauteur de votre menu */
@@ -151,30 +151,29 @@ nav a:active {
 
 /* Css pour les détails d'un plat */
 .details{
-    background-color: #d5d5d5;
-    max-width: 400px; /* Largeur maximale du cadre */
+    background-color: rgba(174, 152, 155, 0.335);
+    max-width: 600px; /* Largeur maximale du cadre */
     margin: 1rem auto; /* Centre le cadre horizontalement */
     padding: 20px ; /* Espace à l'intérieur du cadre */
-    border: 1px solid #d5d5d5; /* Bordure du cadre */
-    border-radius: 10px; /* Coins arrondis du cadre */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.469); /* Ombre autour du formulaire */
+    border: 1px solid rgba(174, 152, 155, 0.174); /* Bordure du cadre */
+    border-radius: 5% 5% 5% 5%; /* Coins arrondis du cadre */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.469); 
     top: 50px; /* Ajuste la valeur en fonction de la hauteur de votre menu */
 }
 .details h2{
   margin-top: 30px; 
   margin-bottom: 30px;
-  color: rgb(106, 16, 16);
+  color: rgb(0, 0, 0);
   width: 10px;
   height: 10px;
   text-align: left;
-  font-size: 20px;
+
   font-weight: bold;
 }
 
 .details h1{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(0, 0, 0);
   text-align: center;
-  font-size: 30px;
   font-weight: bold;
 }
 
@@ -205,107 +204,100 @@ nav a:active {
     color: black;
     padding: 4rem;
   box-sizing: border-box;
-  
-  h1{
-      margin-top: 100px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 20px;
-  }
-  .carre{
-      margin: 10px;
-      padding: 10px;
-      display: flex; /* Utilisation de flexbox pour centrer le contenu */
-      justify-content: center; /* Centre horizontalement */
-      align-items: center; /* Centre verticalement */
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      background-color: #b71c1c;
-      max-width: 300px; /* Largeur maximale du formulaire */
-      max-height: 600px; /* Hauteur maximale de l'élément .carre */
-      margin: 0 auto; /* Centre le formulaire horizontalement */
-      border-radius: 10px; /* Coins arrondis du formulaire */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.469); /* Ombre autour du formulaire */
-      top: 0.1rem; /* Ajustement de la valeur en fonction de la hauteur de votre menu */
-  }
+}
+.carre{
+  margin: 10px;
+  padding: 10px;
+  display: flex; /* Utilisation de flexbox pour centrer le contenu */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #b71c1c;
+  max-width: 300px; /* Largeur maximale du formulaire */
+  max-height: 600px; /* Hauteur maximale de l'élément .carre */
+  margin: 0 auto; /* Centre le formulaire horizontalement */
+  border-radius: 10px; /* Coins arrondis du formulaire */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.469); /* Ombre autour du formulaire */
+  top: 0.1rem; /* Ajustement de la valeur en fonction de la hauteur de votre menu */
+}
 
-  li{
-    width: calc(100% - 10px); /* La largeur est calculée pour utiliser tout l'espace disponible, moins 1 rem pour l'espace désiré */
-    border-radius: 20px;
-    border: 1px solid white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.415); /* Ombre autour du formulaire */
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    background-color: white;
-  }
+.comment li{
+width: calc(100% - 10px); /* La largeur est calculée pour utiliser tout l'espace disponible, moins 1 rem pour l'espace désiré */
+border-radius: 20px;
+border: 1px solid white;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.415); /* Ombre autour du formulaire */
+margin-bottom: 20px;
+padding-bottom: 20px;
+background-color: white;
+}
 
-  ul {
-    /* Rend la balise ul transparente */
-    list-style: none;
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 20px; /* Crée de l'espace entre le menu et l'article */
-  }
-  
+ .comment ul {
+/* Rend la balise ul transparente */
+list-style: none;
+text-align: center;
+margin-bottom: 10px;
+font-size: 15px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin-top: 20px; /* Crée de l'espace entre le menu et l'article */
 }
 
 /* css pour enregistrement de son commentaire */
 .formulaire{
   padding: 4rem;
   box-sizing: border-box;
-    /* Styles pour le formulaire */
-  form {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      background-color: #b71c1c;
-      max-width: 400px; /* Largeur maximale du formulaire */
-      margin: 0 auto; /* Centre le formulaire horizontalement */
-      padding: 20px ; /* Espace à l'intérieur du formulaire */
-      border: 1px solid #b71c1c; /* Bordure du formulaire */
-      border-radius: 10px; /* Coins arrondis du formulaire */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.469); /* Ombre autour du formulaire */
-      top: 0.1rem; /* Ajustez la valeur en fonction de la hauteur de votre menu */
-  }
+}
+ /* Styles pour le formulaire */
+ form {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #b71c1c;
+  max-width: 400px; /* Largeur maximale du formulaire */
+  margin: 0 auto; /* Centre le formulaire horizontalement */
+  padding: 20px ; /* Espace à l'intérieur du formulaire */
+  border: 1px solid #b71c1c; /* Bordure du formulaire */
+  border-radius: 10px; /* Coins arrondis du formulaire */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.469); /* Ombre autour du formulaire */
+  top: 0.1rem; /* Ajustez la valeur en fonction de la hauteur de votre menu */
+}
 
-  /* Styles pour les éléments du formulaire (labels et champs de saisie) */
-  div {
-      margin-bottom: 10px;
-  }
+/* Styles pour les éléments du formulaire (labels et champs de saisie) */
+div {
+  margin-bottom: 10px;
+}
 
-  label {
-      display: block;
-      color: white;
-  }
+label {
+  display: block;
+  color: white;
+}
 
-  input {
-      width: 100%;
-      padding: 5px;
-      border: 1px solid #b71c1c;
-      border-radius: 5px;
-      margin-bottom: 10px; /* Espace entre les champs de saisie */
-      text-align: left ;
-      background-color: white;
-  }
+input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #b71c1c;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Espace entre les champs de saisie */
+  text-align: left ;
+  background-color: white;
+}
 
-  textarea {
-      background-color: white;
-      border: 1px solid #b71c1c;
-      width: 100%;
-      padding: 5px;
-      border: 1px solid #b71c1c;
-      border-radius: 5px;
-      margin-bottom: 10px; /* Espace entre les champs de saisie */
-  }
-  button {
-      background-color: #1f1717;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-  }
+textarea {
+  background-color: white;
+  border: 1px solid #b71c1c;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #b71c1c;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Espace entre les champs de saisie */
+}
+button {
+  background-color: #1f1717;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-  button:hover {
-      background-color: #fff;
-      color: black;
-  }
+button:hover {
+  background-color: #fff;
+  color: black;
 }
