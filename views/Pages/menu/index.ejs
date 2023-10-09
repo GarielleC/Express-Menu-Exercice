@@ -4,7 +4,11 @@
         <% plats.forEach((plat) => { %>
             <li class="platel">
                 <a href="/menu/<%= plat.id %>">
-                    <p><%= plat.nom %> : ..... <%= plat.prix %>€</p>
+                    <!-- <p><%= plat.nom %> : ..... <%= plat.prix %>€</p> -->
+                    <ul class="menu__list">
+                        <li class="menu__el"><%= plat.nom %></li>
+                        <li class="menu__el"><%= plat.prix %>€</li>
+                    </ul>
                     <p>(<%= plat.breveDescription %>)</p>
                 </a>
             </li>

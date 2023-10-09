@@ -126,19 +126,36 @@ nav a:active {
 }
 
 .plats{
+  color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(174, 152, 155);
+  background-color: rgb(209, 209, 209);
   max-width: 400px; /* Largeur maximale du cadre */
   margin: 1rem auto; /* Centre le cadre horizontalement */
   padding: 20px ; /* Espace à l'intérieur du cadre */
-  border: 1px solid rgb(174, 152, 155); /* Bordure du cadre */
+  border: 1px solid rgb(209, 209, 209); /* Bordure du cadre */
   border-radius: 10px; /* Coins arrondis du cadre */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.469); /* Ombre autour du formulaire */
   top: 50px; /* Ajuste la valeur en fonction de la hauteur de votre menu */
 
-  ul{
-    list-style: none;
-  }
+}
+.menu__list{
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.menu__el:nth-child(2){
+ justify-self: end; 
+}
+.platel{
+  margin-bottom: 1rem;
+}
+.plats ul{
+  list-style: none;
+}
+.plats p{
+  color: black;
 }
 
 .img{
